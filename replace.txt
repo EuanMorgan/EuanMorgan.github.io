@@ -1,0 +1,101 @@
+Service Section Start
+    <section id="services" class="section bg-grey services">
+      <div class="container">
+        <div class="title">
+          <p>what can i do</p>
+          <h2>My <span>Services</span></h2>
+        </div>
+
+        <div class="row">
+          <!-- Service Block -->
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="service-block">
+              <div class="service-icon">
+                <i class="icofont icofont-computer"></i>
+              </div>
+              <span class="bg-text">01</span>
+              <h3>Web Development</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry typesetting industry
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="service-block">
+              <div class="service-icon">
+                <i class="icofont icofont-stock-mobile"></i>
+              </div>
+              <span class="bg-text">02</span>
+              <h3>App Development</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry typesetting industry
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="service-block">
+              <div class="service-icon">
+                <i class="icofont icofont-paint"></i>
+              </div>
+              <span class="bg-text">03</span>
+              <h3>Graphic Design</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry typesetting industry
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="service-block">
+              <div class="service-icon">
+                <i class="icofont icofont-ui-camera"></i>
+              </div>
+              <span class="bg-text">04</span>
+              <h3>Photography</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry typesetting industry
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="service-block">
+              <div class="service-icon">
+                <i class="icofont icofont-ui-social-link"></i>
+              </div>
+              <span class="bg-text">05</span>
+              <h3>Media Merketing</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry typesetting industry
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="service-block">
+              <div class="service-icon">
+                <i class="icofont icofont-pen-alt-3"></i>
+              </div>
+              <span class="bg-text">06</span>
+              <h3>Content Writing</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry typesetting industry
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

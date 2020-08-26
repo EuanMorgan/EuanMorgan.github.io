@@ -1,0 +1,209 @@
+
+/* Large Layout */
+@media only screen and (min-width:991.98px) and (max-width:5000px) {
+.navbar-expand-lg .navbar-collapse, .navbar-expand-lg .navbar-nav {
+	display: inline !important;
+	text-align: center
+}
+.navbar-expand-lg .navbar-collapse {
+	display: inline !important
+}
+}
+
+/* Desktop Layout */
+@media only screen and (max-width:1199.98px) {
+}
+
+/* Desktop or Tablet Layout */
+@media only screen and (max-width:991.98px) {
+.sticky-menu {
+	background: #22313C;
+	box-shadow: 0 1px 20px -3px rgba(0,0,0,0.6);
+}
+.navbar-collapse {
+	background: #22313C;
+	margin-top: 2px;
+	text-align: center
+}
+.sticky-menu {
+	padding: 0
+}
+.sticky-menu .navbar-dark .navbar-nav .nav-link {
+	color: #ccc
+}
+.navbar-toggler {
+	width: 100%;
+	border-radius: 0;
+	height: 45px;
+}
+.navbar-toggler:focus {
+	outline: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+	padding: 15px;
+	font-weight: 300
+}
+.sticky-menu .navbar-toggler {
+	width: auto;
+	border-radius: 0;
+	height: 36px;
+	-webkit-transition: 0.5s all;
+	transition: 0.5s all;
+	font-size: 16px;
+	line-height: 25px;
+}
+.sticky-menu .navbar-brand {
+	display: block
+}
+.sticky-menu .navbar-collapse {
+	border-top: 1px solid #273845;
+	margin-top: 10px;
+}
+.navbar-dark .navbar-brand {
+	padding: 0;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.services .col-lg-4:nth-child(1) {
+	border-left: none;
+	border-top: none;
+}
+.services .col-lg-4:nth-child(2) {
+	border-right: none;
+}
+.services .col-lg-4:nth-child(3) {
+	border-right: 1px solid #e2e2e2;
+	border-left: none;
+}
+.services .col-lg-4:nth-child(4) {
+	border-bottom: 1px solid #eee;
+	border-right: none;
+}
+.services .col-lg-4:nth-child(5) {
+	border-left: none;
+}
+.services .col-lg-4:nth-child(6) {
+	border-right: none;
+}
+.services .col-lg-4:nth-child(8) {
+	border-right: none;
+}
+.services .col-lg-4:nth-child(9) {
+	border-left: none;
+	border-right: 1px solid #e2e2e2;
+}
+.fact-counter .counter {
+	margin: 15px 0
+}
+.testimonial-list {
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.contact-list {
+	padding: 25px 0
+}
+}
+
+/* Tablet Layout */
+@media only screen and (max-width:767.98px) {
+.introduction {
+	text-align: center;
+}
+.introduction-title {
+	border: 0;
+	padding: 0;
+	text-align: center
+}
+.introduction-title h2 {
+	line-height: 55px;
+	margin-bottom: 25px;
+}
+.services {
+	padding-bottom: 60px;
+}
+.services .row {
+	margin-top: 40px;
+}
+.services .col-lg-4 {
+	max-height: 100%;
+	min-height: 100%;
+	padding-top: 40px;
+	border: none !important
+}
+.portfolio-controls ul {
+	text-align: center
+}
+.portfolio-controls ul li {
+	line-height: 53px;
+}
+.timeline-flow > ul:before {
+	left: 40px;
+}
+.timeline-flow ul li .timeline-panel {
+	width: calc(100% - 75px);
+	width: -moz-calc(100% - 75px);
+	width: -webkit-calc(100% - 75px);
+	text-align: left;
+	padding: 20px 0
+}
+.timeline-flow ul li .timeline-icon {
+	left: 32px;
+	margin-left: 0;
+	top: 35px;
+}
+.timeline-flow ul li .timeline-panel {
+	float: right;
+}
+.contact-from {
+	text-align: left
+}
+.contact-from .col-12 {
+	margin: 7px 0
+}
+.contact-from .form-group {
+	margin-bottom: 0
+}
+.contact-from .button {
+	margin-top: 15px;
+}
+}
+
+/* Large Mobile Layout */
+@media only screen and (max-width:576px) {
+.scroll-down {
+	bottom: 15px;
+}
+.introduction-title h2 {
+	font-size: 35px;
+	line-height: 45px;
+	text-align: center
+}
+.introduction .button {
+	margin-top: 40px;
+}
+}
+
+/* Small Mobile Layout */
+@media only screen and (max-width:480px) {
+.profile-info h2 {
+	font-size: 35px;
+	line-height: 50px;
+}
+.introduction .button {
+	margin-top: 20px;
+}
+.portfolio-controls ul li {
+	display: block;
+	line-height: 30px;
+}
+}
+
+/* Small Mobile Layout */
+@media only screen and (max-width:380px) {
+.title h2 span {
+	display: block
+}
+}

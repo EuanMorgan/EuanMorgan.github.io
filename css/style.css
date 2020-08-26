@@ -1,0 +1,964 @@
+/*==================================
+* Author        : With Html
+* Template Name : Samrat - One Page Personal Portfolio Template
+* Version       : 1.0
+==================================== */
+
+/*=========== TABLE OF CONTENTS ===========
+1. Google Fonts
+2. Global Settings
+3. Header Section
+4. Nav Section
+5. Profile Section
+6. Header Social Section
+7. Scroll Down
+8. Intro Section
+9. Service Section
+10. Skill bar Section
+11. Portfolio Section
+12. Fact Counter Section
+13. Timeline Section
+14. Testimonials Section
+15. Contact Block Section
+16. Footer Section
+17. Scroll Top Section
+18. Page Loader
+===========*/
+
+/*===============================
+	1. Google Fonts
+===============================*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600");
+
+/*===============================
+	2. Global Settings
+===============================*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  background: #fff;
+  color: #485666;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+[class^="flaticon-"]::before,
+[class*=" flaticon-"]::before,
+[class^="flaticon-"]::after,
+[class*=" flaticon-"]::after {
+  margin: 0;
+}
+p {
+  font-size: 18px;
+  line-height: 35px;
+  margin: 0;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2b2f37;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+blockquote {
+  line-height: 35px;
+  margin: 20px 0;
+  color: #000;
+  font-weight: 600;
+}
+.title {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.title h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #2b2f37;
+  font-family: "Roboto", sans-serif;
+}
+.title h2 span {
+  color: #ff7200;
+}
+.title p {
+  font-size: 20px;
+  margin-bottom: 2px;
+  opacity: 0.8;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+}
+.title-white h2,
+.title-white p {
+  color: #fff;
+}
+.button {
+  animation-delay: 2s;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 18px;
+  padding: 14px 22px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-animation-delay: 2s;
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  animation-delay: 2s;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  white-space: nowrap;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.button:hover {
+  -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.button-1 {
+  background: #2b2f37;
+  border: 1px solid #131417;
+  color: #fff;
+}
+.button-1:hover,
+.button-1:active {
+  background: #484e5b;
+  border: 1px solid #3a4049;
+  color: #fff;
+}
+.button-2 {
+  background: none;
+  color: #2b2f37;
+  border: 1px solid #131417;
+}
+.button-2:hover,
+.button-2:active {
+  color: #5c6676;
+  border: 1px solid #5c6676;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+.section {
+  padding: 100px 0;
+}
+.small-section {
+  padding: 50px 0;
+}
+
+.bg-black {
+  background: #2b2f37;
+}
+.bg-black {
+  background: #2b2f37 url(../images/background.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: 100% 100%;
+  position: relative;
+}
+.bg-black:before {
+  background: #2b2f37;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.989;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.bg-black .container {
+  z-index: 9;
+  position: relative;
+}
+
+/*===============================
+	3. Header Section
+===============================*/
+
+header {
+  padding-bottom: 120px;
+  background: url(../images/header-background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  min-height: 600px;
+}
+header:before {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: rgba(19, 27, 32, 0.9);
+}
+header .container {
+  z-index: 9;
+  position: relative;
+}
+
+/*===============================
+	4. Nav Section
+===============================*/
+
+.custom-nav {
+  padding: 20px 0;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.navbar-brand {
+  display: none;
+}
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 15px;
+  padding: 0 22px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #ff8e1a;
+}
+.sticky-menu {
+  background: #fff;
+  box-shadow: 0 1px 20px -3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  padding: 10px 0;
+}
+.sticky-menu .navbar-dark .navbar-nav .nav-link {
+  color: #000;
+}
+.sticky-menu .navbar-dark .navbar-nav .active > .nav-link,
+.sticky-menu .navbar-dark .navbar-nav .nav-link.active,
+.sticky-menu .navbar-dark .navbar-nav .nav-link.show,
+.sticky-menu .navbar-dark .navbar-nav .show > .nav-link {
+  color: #ff7200;
+}
+
+/*===============================
+	5. Profile Section
+===============================*/
+
+.profile {
+  top: 30%;
+  position: relative;
+  text-align: center;
+}
+.profile figure img {
+  width: 160px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.profile-info h2 {
+  color: #fff;
+  font-size: 45px;
+  line-height: 65px;
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.profile-info p {
+  color: #fff;
+  line-height: 45px;
+  font-size: 20px;
+}
+
+/*===============================
+	6. Header Social Section
+===============================*/
+
+.social-icon {
+  text-align: center;
+  padding-top: 20px;
+}
+.social-icon ul {
+  margin: 0;
+}
+.social-icon ul li {
+  display: inline;
+  padding: 0;
+  margin: 0 5px;
+}
+.social-icon ul li a {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+.social-icon ul li a i.icofont-brand-linkedin {
+  font-size: 13px;
+}
+.social-icon ul li a i.icofont-social-google-plus {
+  font-size: 18px;
+}
+.social-icon ul li a:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.social-icon ul li a i {
+  color: rgba(255, 255, 255, 0.41);
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.social-icon ul li a:hover i {
+  color: #fff;
+}
+
+/*===============================
+	 7. Scroll Down
+===============================*/
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+.scroll-down i {
+  display: inline-block;
+  color: #fff;
+  font-size: 40px;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+/*===============================
+	8. Intro Section
+===============================*/
+
+.introduction-title {
+  text-align: right;
+  padding-right: 30px;
+  border-right: 1px solid #eee;
+  height: 100%;
+}
+.introduction-title h2 {
+  color: #2b2f37;
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.introduction-title h2 span {
+  color: #ff6700;
+}
+.introduction .button {
+  margin: 20px 15px 0 0;
+}
+
+/*===============================
+	9. Service Section
+===============================*/
+
+.services {
+  text-align: center;
+}
+.services .row {
+  margin-top: 70px;
+}
+.services .col-lg-4 {
+  border: 1px solid #e2e2e2;
+  margin-left: -1px;
+  margin-top: -1px;
+  padding: 40px;
+}
+.services .col-lg-4:nth-child(1) {
+  border-left: none;
+  border-top: none;
+}
+.services .col-lg-4:nth-child(2) {
+  border-top: none;
+}
+.services .col-lg-4:nth-child(3) {
+  border-top: none;
+  border-right: none;
+}
+.services .col-lg-4:nth-child(4) {
+  border-bottom: none;
+  border-left: none;
+}
+.services .col-lg-4:nth-child(5) {
+  border-bottom: none;
+}
+.services .col-lg-4:nth-child(6) {
+  border-bottom: none;
+  border-right: none;
+}
+.services .col-lg-4:nth-child(7) {
+  border-bottom: none;
+  border-left: none;
+}
+.services .col-lg-4:nth-child(8) {
+  border-bottom: none;
+}
+.services .col-lg-4:nth-child(9) {
+  border-bottom: none;
+  border-right: none;
+}
+.services .col-lg-4:hover .service-icon {
+  background: #000;
+}
+.services .col-lg-4:hover .service-icon i {
+  color: #ffa459;
+}
+.service-icon {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  margin: 0 auto 40px auto;
+  background: #2b2f37;
+  z-index: 9;
+}
+.service-icon i {
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  color: #fff;
+  line-height: 55px;
+  text-align: center;
+}
+.service-block h3 {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 500;
+}
+.service-block p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #2b2f37;
+  margin: 0;
+}
+.bg-text {
+  position: absolute;
+  top: 35px;
+  font-size: 85px;
+  line-height: 60px;
+  font-weight: 600;
+  color: rgba(46, 56, 58, 0.08);
+}
+
+/*===============================
+	10. Skill bar Section
+===============================*/
+
+.skill-bar p {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.skill .row {
+  margin-top: 20px;
+}
+.skillbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #d9dbe1;
+  height: 15px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+.skillbar-bar {
+  height: 15px;
+  width: 0px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#545c6b+0,444a57+100 */
+  background: rgb(84, 92, 107); /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    rgba(84, 92, 107, 1) 0%,
+    rgba(68, 74, 87, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(84, 92, 107, 1) 0%,
+    rgba(68, 74, 87, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(84, 92, 107, 1) 0%,
+    rgba(68, 74, 87, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545c6b', endColorstr='#444a57', GradientType=1 ); /* IE6-9 */
+}
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 14px;
+  height: 15px;
+  line-height: 15px;
+  color: #000;
+  font-weight: 400;
+}
+
+/*===============================
+	11. Portfolio Section
+===============================*/
+
+.portfolio-showcase .mix {
+  display: none;
+}
+.portfolio-controls {
+  margin: 30px auto 0 auto;
+}
+.portfolio-controls ul li {
+  display: inline;
+  cursor: pointer;
+  padding: 14px 26px;
+  color: #666;
+  font-weight: 400;
+  font-size: 15px;
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  text-transform: uppercase;
+}
+.portfolio-controls li.active {
+  color: #000;
+}
+.portfolio .row {
+  margin-top: 35px;
+}
+.portfolio .col-lg-4 {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.portfolio-effect {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+  transform: scale(1);
+  transition: all 1s;
+}
+.portfolio .col-lg-4 :hover .portfolio-img {
+  transform: scale(1.05);
+}
+.portfolio-overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: #273745 url(../images/zoom.png) no-repeat center 40%;
+  background-size: 50px 50px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.6s;
+  outline: 1px solid #415a72;
+  outline-offset: -15px;
+}
+.portfolio .col-lg-4:hover .portfolio-overlay {
+  opacity: 0.9;
+}
+.portfolio-text {
+  display: block;
+  padding: 0 30px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 300;
+  top: 60%;
+  color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translateY(-20px);
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.portfolio .col-lg-4:hover .portfolio-text {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*===============================
+	 12. Fact Counter Section
+===============================*/
+
+.fact-counter {
+  text-align: center;
+}
+.fact-counter .counter {
+  padding: 30px 15px;
+  border-left: 1px dashed #3a3e49;
+  border-right: 1px dashed #3a3e49;
+}
+.fact-counter .counter-icon {
+  margin-bottom: 30px;
+}
+.fact-counter .counter span {
+  font-size: 40px;
+  color: #fff;
+}
+.fact-counter .counter-value {
+  position: relative;
+  font-weight: 500;
+  color: #fff;
+  font-size: 40px;
+  line-height: 35px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+.fact-counter p.counter-title {
+  color: #a3a8b6;
+  font-size: 18px;
+  font-weight: 300;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/*===============================
+	 13. Timeline Section
+===============================*/
+
+.timeline-flow {
+  margin-top: 70px;
+}
+.timeline-flow ul {
+  list-style: none;
+  position: relative;
+}
+.timeline-flow ul:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 1px;
+  background: #ddd;
+  left: 50%;
+}
+.timeline-flow ul li {
+  margin-bottom: 15px;
+  position: relative;
+  text-align: right;
+}
+.timeline-flow ul li:before,
+.timeline-flow ul li:after {
+  content: " ";
+  display: table;
+}
+.timeline-flow ul li:after {
+  clear: both;
+}
+.timeline-flow ul li:before,
+.timeline-flow ul li:after {
+  content: " ";
+  display: table;
+}
+.timeline-flow ul li:after {
+  clear: both;
+}
+.timeline-flow ul li .timeline-panel {
+  width: 48%;
+  float: left;
+  padding: 0px 15px;
+  position: relative;
+}
+.timeline-flow ul li .timeline-icon {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -7px;
+  background: #2b2f37;
+  z-index: 100;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.timeline-flow ul li.timeline-inverted .timeline-panel {
+  float: right;
+  text-align: left;
+}
+.timeline-flow p {
+  margin: 0;
+  font-size: 17px;
+}
+.timeline-title {
+  margin-bottom: 17px;
+}
+.timeline-title p {
+  font-weight: 500;
+}
+.timeline-title h5 {
+  font-size: 18px;
+  margin-top: 4px;
+  font-weight: 600;
+}
+.timeline-text p {
+  line-height: 27px;
+}
+
+/*===============================
+	14. Testimonials Section
+===============================*/
+
+.testimonials .owl-theme .owl-controls {
+  margin-top: 15px;
+}
+.testimonial-list {
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 20px 15px;
+  margin: 120px 10px 20px 10px;
+  text-align: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+.testimonial-list:hover {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+.testimonial-list:active {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+.testimonial-list img {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  padding: 3px;
+  position: relative;
+  margin-top: -80px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.testimonial-list p {
+  font-size: 17px;
+  line-height: 30px;
+}
+.testimonial-list h5 {
+  font-size: 18px;
+  padding-top: 15px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.testimonial-list h5 span {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+}
+
+/*===============================
+	15. Contact Block Section
+===============================*/
+
+.contact-block {
+  text-align: center;
+}
+.contact-info {
+  text-align: center;
+  margin-top: 60px;
+  border: 1px solid #f5f5f5;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+.contact-icon {
+  margin-bottom: 15px;
+}
+.contact-icon span {
+  font-size: 40px;
+  color: #222;
+  line-height: 45px;
+}
+.contact-text h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.contact-text p {
+  margin: 0;
+  font-size: 18px;
+}
+.contact-text p a {
+  color: #49505c;
+}
+.contact-text p a:hover {
+  color: #333;
+}
+.contact-from {
+  margin-top: 40px;
+}
+.contact-from .form-control {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 0;
+  box-shadow: none;
+  color: #000;
+  display: block;
+  font-size: 16px;
+  height: 54px;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+  font-weight: 300;
+}
+.contact-from textarea.form-control {
+  height: 200px;
+  padding-top: 20px;
+}
+.contact-from .button {
+  margin-top: 10px;
+}
+
+/*===============================
+	16. Footer Section
+===============================*/
+
+footer {
+  background: #2b2f37;
+  padding: 80px 0;
+  text-align: center;
+}
+footer p {
+  color: #ccc;
+  font-size: 16px;
+}
+footer .social-icon {
+  padding-top: 15px;
+}
+
+/*===============================
+	17. Scroll Top Section
+===============================*/
+
+.return-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 7px;
+  font-size: 27px;
+}
+.return-to-top:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*===============================
+	18. Page Loader
+===============================*/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 9999999;
+}
+.loader {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: visible;
+  background-image: url(../images/loader.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
