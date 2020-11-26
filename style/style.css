@@ -757,6 +757,17 @@ section.skills h4 {
   cursor: -webkit-grab;
   width: 40vw;
 }
+@media only screen and (max-width: 576px) {
+  .testimonial-list {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .testimonial-list {
+    width: 60vw;
+  }
+}
+
 .testimonial-list:hover {
   cursor: -moz-grab;
   cursor: -webkit-grab;
