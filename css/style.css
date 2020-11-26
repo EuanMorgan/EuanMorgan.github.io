@@ -309,7 +309,7 @@ header .container {
   letter-spacing: 0.5px;
 }
 .profile-info p {
-  color: #fff;
+  color: red;
   line-height: 45px;
   font-size: 20px;
 }
@@ -575,90 +575,127 @@ header .container {
 	11. Portfolio Section
 ===============================*/
 
-.portfolio-showcase .mix {
-  display: none;
+.filter {
+  text-align: center;
+  width: 100%;
 }
-.portfolio-controls {
-  margin: 30px auto 0 auto;
+.filter li {
+  display: inline-block;
+  padding: 5px;
 }
-.portfolio-controls ul li {
-  display: inline;
-  cursor: pointer;
-  padding: 14px 26px;
-  color: #666;
-  font-weight: 400;
-  font-size: 15px;
-  background: #fff;
-  border: 1px solid #f3f3f3;
-  text-transform: uppercase;
-}
-.portfolio-controls li.active {
-  color: #000;
-}
-.portfolio .row {
-  margin-top: 35px;
-}
-.portfolio .col-lg-4 {
-  margin: 10px 0;
-  padding: 0 10px;
-}
-.portfolio-effect {
+.filter a {
   display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.filter .current {
+  background-color: #d82c2e;
+  border-color: #d82c2e;
+  color: white;
+}
+
+section.portfolio {
+  background: white;
+}
+
+.portfolio-items {
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  transition: all 0.2s linear, 1s;
+}
+.portfolio-items li {
+  padding: 5px;
+  display: block;
+  z-index: 2;
+}
+.portfolio-items li img {
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  transition: all 0.2s linear, 1s;
+}
+.portfolio-items .item {
   position: relative;
+  display: block;
   overflow: hidden;
 }
-.portfolio-img {
-  display: block;
+.portfolio-items .mask {
   width: 100%;
-  height: auto;
-  border: none;
-  transform: scale(1);
-  transition: all 1s;
-}
-.portfolio .col-lg-4 :hover .portfolio-img {
-  transform: scale(1.05);
-}
-.portfolio-overlay {
+  height: 100%;
+  background: url(../images/mask.png);
   position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  background: #273745 url(../images/zoom.png) no-repeat center 40%;
-  background-size: 50px 50px;
-  opacity: 0;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")";
   filter: alpha(opacity=0);
-  transition: all 0.6s;
-  outline: 1px solid #415a72;
-  outline-offset: -15px;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  transition: all 0.2s linear, 1s;
 }
-.portfolio .col-lg-4:hover .portfolio-overlay {
-  opacity: 0.9;
-}
-.portfolio-text {
-  display: block;
-  padding: 0 30px;
-  box-sizing: border-box;
+.portfolio-items .icons {
   position: absolute;
-  left: 0;
-  width: 100%;
+  width: 90px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin: -21px auto 0 -47px;
   text-align: center;
-  text-transform: capitalize;
-  font-size: 18px;
-  font-weight: 300;
-  top: 60%;
-  color: #fff;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  transform: translateY(-20px);
-  transition: all 0.3s;
-  text-decoration: none;
+  z-index: 3;
 }
-.portfolio .col-lg-4:hover .portfolio-text {
-  transform: translateY(0px);
+.portfolio-items .icons i {
+  color: white;
+  font-size: 20px;
+  margin-top: 9px;
+}
+.portfolio-items .projectlink,
+.portfolio-items .fullwidth {
+  width: 40px;
+  height: 40px;
+  background: #c12728;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out, 0.2s;
+  -moz-transition: all 0.2s ease-in-out, 0.2s;
+  -o-transition: all 0.2s ease-in-out, 0.2s;
+  -ms-transition: all 0.2s ease-in-out, 0.2s;
+  transition: all 0.2s ease-in-out, 0.2s;
+}
+.portfolio-items .fullwidth {
+  float: left;
+  top: -200px;
+}
+.portfolio-items .projectlink {
+  float: right;
+  bottom: -200px;
+}
+.portfolio-items li .item:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+.portfolio-items li .item:hover .mask {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 100 ")";
+  filter: alpha(opacity=1);
   opacity: 1;
+}
+.portfolio-items li .item:hover .fullwidth {
+  top: 0px;
+}
+.portfolio-items li .item:hover .projectlink {
+  bottom: 0px;
+}
+
+.fancybox-close {
+  top: 0px;
+  right: 0px;
 }
 
 /*===============================
